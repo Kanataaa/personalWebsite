@@ -1,0 +1,40 @@
+body {
+    background-color: lightskyblue;
+}
+
+#contacts {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.contactText {
+    font-size: 45px;
+}
+
+.email,
+.github,
+.linkedin {
+    font-size: 30px;
+}
+
+.github,
+.linkedin,
+.email {
+    text-decoration: none;
+    color: black;
+}
+
+.email:hover,
+.github:hover,
+.linkedin:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 7px;
+    color: blueviolet;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+}
