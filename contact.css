@@ -7,15 +7,16 @@ body {
     display: flex;
     align-items: center;
     flex-flow: column;
-    font-size: 45px;
+    animation: enlargeFadein 1.5s forwards;
 }
+
 
 #main {
     display: flex;
     justify-content: space-evenly;
     border: 2px white solid;
     max-width: 1700px;
-    margin-left: 1050px;
+    padding-left: 100px;
 }
 
 #navbar {
@@ -183,6 +184,17 @@ a:hover {
     }
 }
 
+@keyframes enlargeFadein {
+    from {
+        font-size: 15px;
+        opacity: 0;
+    }
+
+    to {
+        font-size: 45px;
+        opacity: 1;
+    }
+}
 
 /* 
 .email,

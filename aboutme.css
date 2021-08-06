@@ -27,6 +27,7 @@ h1 {
 }
 
 .ASCText {
+    animation: opacityfade 2.3s forwards;
     font-size: 24px;
 }
 

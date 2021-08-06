@@ -35,7 +35,7 @@ img {
     border: double 17px black;
     background-color: goldenrod;
     border-radius: 16px;
-    width: 800px;
+    width: 600px;
     margin: 0;
     padding: 0;
 }
@@ -79,6 +79,8 @@ hr {
     border: 3px solid black;
     padding: 7px;
     font-size: 26px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 @keyframes enlarge{
