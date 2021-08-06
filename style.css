@@ -22,6 +22,10 @@ a {
     color:black;
 }
 
+a:hover {
+    animation: enlarge 1s forwards;
+}
+
 .items:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
@@ -75,4 +79,18 @@ hr {
     border: 3px solid black;
     padding: 7px;
     font-size: 26px;
+}
+
+@keyframes enlarge{
+    from {
+        text-decoration: none;
+        font-size: 23px;
+    }
+
+    to {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: orange;
+        font-size: 47px;
+    }
 }

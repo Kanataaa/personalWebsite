@@ -1,17 +1,190 @@
 body {
-    background-color: lightskyblue;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #contacts {
     display: flex;
     align-items: center;
     flex-flow: column;
-}
-
-.contactText {
     font-size: 45px;
 }
 
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px white solid;
+    max-width: 1700px;
+    margin-left: 1050px;
+}
+
+#navbar {
+    font-size: 23px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+hr {
+    height: 2px;
+    background: black;
+    border: solid 1px black;
+    margin-bottom: 95px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    animation: underline 0.6s forwards;
+}
+
+.linkedinExtra,
+.githubExtra,
+.emailExtra {
+    font-size: 37px;
+    margin-top: 45px;
+    max-width: 370px;
+}
+
+.emailText,
+.linkedinText,
+.githubText {
+    font-size: 45px;
+    border: 4px black solid;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.emailText {
+    margin-top: 150px;
+}
+
+.linkedinText,
+.githubText {
+    margin-top: 300px;
+}
+
+.githubLink {
+    font-size: 27px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+    border: 4px turquoise solid;
+    color: turquoise;
+    border-radius: 15px;
+}
+
+.emailLink {
+    font-size: 27px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+    border: 4px blueviolet solid;
+    color: blueviolet;
+    border-radius: 15px;
+}
+
+.linkedinLink {
+    font-size: 27px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+    border: 4px orange solid;
+    color: orange;
+    border-radius: 15px;
+}
+
+.githubLink:hover {
+    animation: gitFadein 0.6s forwards;
+}
+
+.emailLink:hover {
+    animation: emailFadein 0.6s forwards;
+}
+
+.linkedinLink:hover {
+    animation: linkedinFadein 0.6s forwards;
+}
+
+@keyframes gitFadein {
+    from{
+        background-color: white;
+        color: turquoise;
+        padding: 25px 100px 25px 100px;
+        margin-left: 10px;
+    }
+
+    to{
+        background-color: turquoise;
+        color: white;
+        padding: 35px 115px 35px 115px;
+        margin-left: 5px;
+    }
+}
+
+@keyframes emailFadein {
+    from {
+        background-color: white;
+        color: blueviolet;
+        padding: 25px 100px 25px 100px;
+        margin-left: 10px;
+    }
+
+    to {
+        background-color: blueviolet;
+        color: white;
+        padding: 35px 115px 35px 115px;
+        margin-left: 5px;
+    }
+}
+
+@keyframes linkedinFadein {
+    from {
+        background-color: white;
+        color: orange;
+        padding: 25px 100px 25px 100px;
+        margin-left: 10px;
+    }
+
+    to {
+        background-color: orange;
+        color: white;
+        padding: 35px 115px 35px 115px;
+        margin-left: 5px;
+    }
+}
+
+@keyframes underline{
+    from {
+        text-decoration: none;
+        font-size: 23px;
+    }
+
+    to {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: orange;
+        font-size: 47px;
+    }
+}
+
+
+/* 
 .email,
 .github,
 .linkedin {
@@ -32,7 +205,7 @@ body {
     text-decoration-color: orange;
     text-decoration-thickness: 7px;
     color: blueviolet;
-}
+} */
 
 p {
     font-size: 30px;
